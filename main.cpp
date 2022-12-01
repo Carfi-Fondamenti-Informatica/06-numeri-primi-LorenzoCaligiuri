@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     int n=0;
     cin>>n;
-    if(Nprimi(n, n/2)==1){
+    if(Nprimi(n/2, n)){
         cout<<"numero primo"<<endl;
     }else{
         cout<<"numero non primo"<<endl;
