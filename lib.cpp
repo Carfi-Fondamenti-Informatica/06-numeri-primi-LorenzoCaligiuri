@@ -1,11 +1,12 @@
 #include "lib.h"
 
 bool Nprimi(int div, int n) {
-    if(div==1){
-        return true;
-    }else if(n%div==0){
+    int ris=n%div;
+    if(ris==0 and div!=1){
         return false;
-    }else{
+    }else if(ris==0 and div==1){
+        return true;
+    }else if(ris!=0 and div!=1){
         Nprimi(--div, n);
     }
 
